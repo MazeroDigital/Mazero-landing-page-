@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mazero</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto+Serif&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto Serif', serif;
+      background: linear-gradient(to bottom, #0e0b06, #1a140d);
+      color: #e4d7c4;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: rgba(10, 8, 6, 0.95);
+      color: #f0d7a5;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-family: 'Cinzel', serif;
+      border-bottom: 1px solid #a98c55;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 1.2rem;
+      text-decoration: none;
+      color: #d5b372;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      color: #f8e4b8;
+      text-shadow: 0 0 8px #f8e4b8;
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      border-bottom: 1px solid #5c4524;
+      position: relative;
+    }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.4rem;
+      color: #f0d7a5;
+      margin-bottom: 1rem;
+      border-left: 5px solid #c3a773;
+      padding-left: 1rem;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #e6dcc8;
+      margin-bottom: 2rem;
+    }
+
+    .section-divider {
+      height: 60px;
+      background: none;
+      opacity: 0.6;
+      margin: 3rem auto;
+    }
+
+    .scroll-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #d1b37f;
+      width: 60px;
+      height: 60px;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+      box-shadow: 0 0 15px #caa86fbb;
+      z-index: 999;
+      transition: transform 0.3s ease;
+    }
+
+    .scroll-button:hover {
+      transform: scale(1.1);
+    }
+
+    .fade-in {
+      animation: fade 2s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fade {
+      to {
+        opacity: 1;
+      }
+    }
+
+    footer {
+      background: #0e0b06;
+      text-align: center;
+      color: #aa9872;
+      padding: 2rem 1rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mazero</h1>
+    <nav>
+      <a href="#reach">Awareness</a>
+      <a href="#engage">Engagement</a>
+      <a href="#convert">Conversion</a>
+    </nav>
+  </header>
+
+  <section id="reach" class="fade-in">
+    <h2>Awareness & Reach</h2>
+    <p>Mazero maximizes your digital footprint with data-driven ad campaigns, influencer partnerships, and branding systems that spark recognition and attract qualified audiences.</p>
+    <div class="section-divider"></div>
+  </section>
+
+  <section id="engage" class="fade-in">
+    <h2>Engagement & Trust</h2>
+    <p>We create compelling narratives, elegant visuals, and emotionally resonant journeys through email marketing, social storytelling, and automation that connects authentically.</p>
+    <div class="section-divider"></div>
+  </section>
+
+  
+  <section id="services" class="fade-in">
+    <h2 style="font-size: 2.5rem; text-align: center; color: #f0d7a5;">Our Signature Services</h2>
+    <p>We offer bespoke digital marketing solutions tailored to your brand's identity and growth goals. Each service is crafted with precision, creativity, and data intelligence.</p>
+    <ul style="list-style-type: none; padding-left: 0; font-size: 1.2rem; line-height: 2.2; color: #f2e3c3; text-align: center;">
+      <li>📬 Email & SMS Marketing</li>
+      <li>🎯 Paid Media Strategy (Meta, Google, TikTok, and more)</li>
+      <li>🖥️ Funnel Design & Landing Page Optimization</li>
+      <li>📊 Analytics & Reporting</li>
+      <li>🖋️ Copywriting & Brand Messaging</li>
+      <li>🧠 AI-Powered Strategy Automation</li>
+      <li>💼 Client Strategy Concierge (Digital Tailor)</li>
+    </ul>
+    <div class="section-divider"></div>
+  </section>
+
+  <section id="convert" class="fade-in">
+
+    <h2>Conversion & Growth</h2>
+    <p>From intelligent funnel design to real-time analytics, Mazero turns intent into action — scaling brands through optimization, AI-powered strategy, and luxurious user experience.</p>
+    <div class="section-divider"></div>
+  </section>
+
+  <button class="scroll-button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" title="Back to Top"></button>
+
+  <footer>
+    © 2025 Mazero. Strategy, Elevated.
+  </footer>
+
+</body>
+</html>
